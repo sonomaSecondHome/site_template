@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <main>
+    <main class="p-8">
         <p>Hello!</p>
     </main>
 </template>
