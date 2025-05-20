@@ -24,6 +24,5 @@
 
 <template>
     <Navbar />
-
     <RouterView />
 </template>
