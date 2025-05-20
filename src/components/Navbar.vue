@@ -7,13 +7,13 @@ const address = config.address;
 
 <template>
     <header class="p-8">
-        <p class="text-center">{{ address }}</p>
+        <p class="text-center bold"><router-link :to="{ path: '/' }">{{ address }}</router-link></p>
         
         <nav class="flex flex-row items-center justify-center gap-[50px] py-8">
-            <span>Information</span>
-            <span>Maintenance Requests</span>
-            <span>Calendar</span>
-            <span>Inspections</span>
+            <router-link :to="{ path: '/info' }">Information</router-link>
+            <router-link :to="{ path: '/maintenance' }">Maintenance Requests</router-link>
+            <router-link :to="{ path: '/calendar' }">Calendar</router-link>
+            <router-link :to="{ path: '/inspections' }">Inspections</router-link>
         </nav>
     </header>
 </template>
