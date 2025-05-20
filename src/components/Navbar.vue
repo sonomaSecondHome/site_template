@@ -1,7 +1,9 @@
 <script setup>
-import { config } from "../config";
+import { inject } from "vue";
+import { storeToRefs } from 'pinia';
 
-const address = config.address;
+const propertyStore = inject('propertyStore');
+const { address, image } = storeToRefs(propertyStore);
 
 </script>
 
