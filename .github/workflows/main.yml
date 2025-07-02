@@ -11,6 +11,9 @@ jobs:
         with:
           token: ${{ secrets.token }}
 
+      - name: Create .env file from secret
+        run: echo "${{ secrets.APP_ENV }}" > .env
+        
       - name: Update config
         run: |
           git config --global user.email "csperando@gmail.com"
